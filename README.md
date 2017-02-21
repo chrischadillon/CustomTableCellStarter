@@ -1,5 +1,5 @@
 This demo application shows how to use multuple Custom Table View Cells in one
-Table View
+Table View.
 
 YouTube playlist demoing this code:
 
