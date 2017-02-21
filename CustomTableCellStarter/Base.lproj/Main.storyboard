@@ -40,6 +40,9 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="Mkc-Vd-eBs" secondAttribute="bottom" constant="3.5" id="xzO-Y1-UJb"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="theName" destination="Mkc-Vd-eBs" id="F4O-4D-zKf"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellWithIcon" rowHeight="76" id="HeO-I4-HMS" customClass="TableViewCellWithIcon" customModule="CustomTableCellStarter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="76"/>
@@ -71,6 +74,10 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="1jC-xG-1Pb" secondAttribute="bottom" constant="-5.5" id="oMa-2u-hQD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="theImage" destination="1jC-xG-1Pb" id="UDE-tl-4Ym"/>
+                                    <outlet property="theName" destination="xgQ-xD-9KH" id="4NH-88-ZmP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

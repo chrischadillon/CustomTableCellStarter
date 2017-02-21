@@ -9,6 +9,6 @@
 import UIKit
 
 class TableViewCellWithoutIcon: UITableViewCell {
-
+    @IBOutlet var theName: UILabel!
 }
 

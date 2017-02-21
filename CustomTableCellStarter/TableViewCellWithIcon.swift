@@ -9,5 +9,6 @@
 import UIKit
 
 class TableViewCellWithIcon: UITableViewCell {
-
+    @IBOutlet var theName: UILabel!
+    @IBOutlet var theImage: UIImageView!
 }
