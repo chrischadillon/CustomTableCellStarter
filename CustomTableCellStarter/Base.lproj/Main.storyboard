@@ -85,7 +85,13 @@
                             <outlet property="delegate" destination="LZc-gT-GK7" id="7HQ-95-DgS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fq8-Ee-M9M"/>
+                    <navigationItem key="navigationItem" id="fq8-Ee-M9M">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Um-Za-BBp">
+                            <connections>
+                                <action selector="doAdd:" destination="LZc-gT-GK7" id="bn7-gi-VbJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22T-HE-emB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,6 +16,17 @@ class TableViewController: UITableViewController {
         }
     }
     
+    @IBAction func doAdd(_ sender: UIBarButtonItem) {
+        let addAlert = UIAlertController(title: "Icone?", message: "Enter the name of a possible Icon", preferredStyle: .alert)
+        addAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        addAlert.addTextField(configurationHandler: nil)
+        let addAction = UIAlertAction(title: "Add", style: .default ) { (_) in
+            let theName = addAlert.textFields!.first!.text
+            self.theIconNames.append(theName!)
+        }
+        addAlert.addAction(addAction)
+        present(addAlert, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +54,6 @@ class TableViewController: UITableViewController {
         return self.theIconNames.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let theImage = UIImage(named: self.theIconNames[indexPath.row]) {
