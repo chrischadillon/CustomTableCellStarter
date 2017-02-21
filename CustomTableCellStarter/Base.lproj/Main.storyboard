@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,6 +25,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="De1-Ed-wMV" id="xpK-Pj-Gii">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkc-Vd-eBs">
+                                            <rect key="frame" x="8" y="11" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Mkc-Vd-eBs" firstAttribute="top" secondItem="xpK-Pj-Gii" secondAttribute="topMargin" constant="3" id="Cbo-Fj-W1L"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="Mkc-Vd-eBs" secondAttribute="leading" id="NSU-NX-Lhb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Mkc-Vd-eBs" secondAttribute="trailing" id="wQv-Ol-lZs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Mkc-Vd-eBs" secondAttribute="bottom" constant="3.5" id="xzO-Y1-UJb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellWithIcon" rowHeight="76" id="HeO-I4-HMS" customClass="TableViewCellWithIcon" customModule="CustomTableCellStarter" customModuleProvider="target">
@@ -32,6 +47,29 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HeO-I4-HMS" id="AZb-zw-eQU">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1jC-xG-1Pb">
+                                            <rect key="frame" x="295" y="1" width="72" height="72"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="72" id="y8e-Lp-VGI"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgQ-xD-9KH">
+                                            <rect key="frame" x="8" y="27" width="279" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xgQ-xD-9KH" secondAttribute="bottom" constant="19.5" id="Bvv-NW-el2"/>
+                                        <constraint firstItem="1jC-xG-1Pb" firstAttribute="leading" secondItem="xgQ-xD-9KH" secondAttribute="trailing" constant="8" id="Fbz-M8-Jxk"/>
+                                        <constraint firstItem="1jC-xG-1Pb" firstAttribute="top" secondItem="AZb-zw-eQU" secondAttribute="topMargin" constant="-7" id="FxU-yd-SNK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1jC-xG-1Pb" secondAttribute="trailing" id="GYy-L0-qga"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="xgQ-xD-9KH" secondAttribute="leading" id="SYn-bC-lff"/>
+                                        <constraint firstItem="xgQ-xD-9KH" firstAttribute="top" secondItem="AZb-zw-eQU" secondAttribute="topMargin" constant="19" id="hhN-bf-WoX"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1jC-xG-1Pb" secondAttribute="bottom" constant="-5.5" id="oMa-2u-hQD"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
