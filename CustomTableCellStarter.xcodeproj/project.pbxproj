@@ -15,6 +15,7 @@
 		8397C0A01E5B9BE7000EE522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8397C09F1E5B9BE7000EE522 /* Assets.xcassets */; };
 		8397C0A31E5B9BE7000EE522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8397C0A11E5B9BE7000EE522 /* LaunchScreen.storyboard */; };
 		83ED7D011E5E08A6006FD468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED7D001E5E08A6006FD468 /* ViewController.swift */; };
+		83FE358D1E5E0DF000E4921B /* IconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE358C1E5E0DF000E4921B /* IconViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8397C0A21E5B9BE7000EE522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8397C0A41E5B9BE7000EE522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83ED7D001E5E08A6006FD468 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83FE358C1E5E0DF000E4921B /* IconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				834B14EC1E5BAFFC00E7D740 /* TableViewController.swift */,
 				8397C0981E5B9BE7000EE522 /* AppDelegate.swift */,
 				8397C09C1E5B9BE7000EE522 /* Main.storyboard */,
+				83FE358C1E5E0DF000E4921B /* IconViewController.swift */,
 				83ED7D001E5E08A6006FD468 /* ViewController.swift */,
 				8397C09F1E5B9BE7000EE522 /* Assets.xcassets */,
 				8313EFC71E5CC1C6000B35FE /* TableViewCellWithIcon.swift */,
@@ -151,6 +154,7 @@
 				8313EFCA1E5CC205000B35FE /* TableViewCellWithoutIcon.swift in Sources */,
 				834B14ED1E5BAFFC00E7D740 /* TableViewController.swift in Sources */,
 				8397C0991E5B9BE7000EE522 /* AppDelegate.swift in Sources */,
+				83FE358D1E5E0DF000E4921B /* IconViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
