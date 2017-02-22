@@ -14,6 +14,7 @@
 		8397C09E1E5B9BE7000EE522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8397C09C1E5B9BE7000EE522 /* Main.storyboard */; };
 		8397C0A01E5B9BE7000EE522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8397C09F1E5B9BE7000EE522 /* Assets.xcassets */; };
 		8397C0A31E5B9BE7000EE522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8397C0A11E5B9BE7000EE522 /* LaunchScreen.storyboard */; };
+		83ED7D011E5E08A6006FD468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED7D001E5E08A6006FD468 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8397C09F1E5B9BE7000EE522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8397C0A21E5B9BE7000EE522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8397C0A41E5B9BE7000EE522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83ED7D001E5E08A6006FD468 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				834B14EC1E5BAFFC00E7D740 /* TableViewController.swift */,
 				8397C0981E5B9BE7000EE522 /* AppDelegate.swift */,
 				8397C09C1E5B9BE7000EE522 /* Main.storyboard */,
+				83ED7D001E5E08A6006FD468 /* ViewController.swift */,
 				8397C09F1E5B9BE7000EE522 /* Assets.xcassets */,
 				8313EFC71E5CC1C6000B35FE /* TableViewCellWithIcon.swift */,
 				8313EFC91E5CC205000B35FE /* TableViewCellWithoutIcon.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83ED7D011E5E08A6006FD468 /* ViewController.swift in Sources */,
 				8313EFC81E5CC1C6000B35FE /* TableViewCellWithIcon.swift in Sources */,
 				8313EFCA1E5CC205000B35FE /* TableViewCellWithoutIcon.swift in Sources */,
 				834B14ED1E5BAFFC00E7D740 /* TableViewController.swift in Sources */,

@@ -42,6 +42,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="theName" destination="Mkc-Vd-eBs" id="F4O-4D-zKf"/>
+                                    <segue destination="QtB-ne-V04" kind="presentation" id="yyk-pH-dHU"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellWithIcon" rowHeight="76" id="HeO-I4-HMS" customClass="TableViewCellWithIcon" customModule="CustomTableCellStarter" customModuleProvider="target">
@@ -77,6 +78,7 @@
                                 <connections>
                                     <outlet property="theImage" destination="1jC-xG-1Pb" id="UDE-tl-4Ym"/>
                                     <outlet property="theName" destination="xgQ-xD-9KH" id="4NH-88-ZmP"/>
+                                    <segue destination="QtB-ne-V04" kind="presentation" id="vqg-2m-6QG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -97,6 +99,37 @@
             </objects>
             <point key="canvasLocation" x="1096.8" y="124.58770614692655"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="M1S-4X-xrx">
+            <objects>
+                <viewController id="QtB-ne-V04" customClass="ViewController" customModule="CustomTableCellStarter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i4C-Oz-luv"/>
+                        <viewControllerLayoutGuide type="bottom" id="IjC-8a-3a9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Brw-On-lZy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-zl-Ixk">
+                                <rect key="frame" x="163" y="318" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="doCancel:" destination="QtB-ne-V04" eventType="touchUpInside" id="Bmc-ho-QBx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GG1-zl-Ixk" firstAttribute="centerX" secondItem="Brw-On-lZy" secondAttribute="centerX" id="Mui-tC-1j9"/>
+                            <constraint firstItem="GG1-zl-Ixk" firstAttribute="centerY" secondItem="Brw-On-lZy" secondAttribute="centerY" id="wgf-TN-0rE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUN-uC-2jP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1937" y="125"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qMF-Dk-4D3">
             <objects>
@@ -116,4 +149,7 @@
             <point key="canvasLocation" x="157.59999999999999" y="124.58770614692655"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yyk-pH-dHU"/>
+    </inferredMetricsTieBreakers>
 </document>
